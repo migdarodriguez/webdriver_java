@@ -13,6 +13,7 @@ public class DropdownTest extends BaseTests {
         var dropDownPage = homePage.clickDropDown();    // en la home page , hace clic en link Dropdown
 
         String option = "Option 1";
+        //String option2 = "Option 2";
         dropDownPage.selectFromDropDown("Option 2");        //selecciona del drop la Option 1
         var selectedOptions = dropDownPage.getSelectedOptions();
         assertEquals(selectedOptions.size(), 1, "Incorrect number of selections");
